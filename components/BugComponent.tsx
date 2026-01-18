@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { BugInstance } from '../types';
+import { BugInstance, BugType } from '../types';
+import HerculesBeetleIcon from './HerculesBeetleIcon';
 
 interface BugComponentProps {
   bug: BugInstance;
@@ -8,6 +9,8 @@ interface BugComponentProps {
 }
 
 const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
+  const isHerculesBeetle = bug.type === BugType.HERCULES_BEETLE;
+
   return (
     <div
       onMouseDown={(e) => {
@@ -16,19 +19,27 @@ const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
           onCatch(bug.id);
         }
       }}
-      className="absolute cursor-pointer select-none transition-transform hover:scale-125 bug-transition p-2"
+      className="absolute cursor-pointer select-none transition-transform hover:scale-125 bug-transition"
       style={{
         left: `${bug.x}%`,
         top: `${bug.y}%`,
         fontSize: `${bug.size}px`,
         transform: `rotate(${bug.angle}deg)`,
         // 클릭 영역을 조금 더 넓게 확보하여 사용자 편의성 증대
-        margin: '-20px', 
+        margin: '-20px',
+        // SVG 사용시 정렬 조정
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
-      <span role="img" aria-label={bug.type}>
-        {bug.emoji}
-      </span>
+      {isHerculesBeetle ? (
+        <HerculesBeetleIcon size={bug.size} />
+      ) : (
+        <span role="img" aria-label={bug.type} className="p-2">
+          {bug.emoji}
+        </span>
+      )}
     </div>
   );
 };
