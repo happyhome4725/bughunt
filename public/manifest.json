@@ -2,7 +2,7 @@
   "name": "곤충 탐험대",
   "short_name": "곤충 탐험대",
   "description": "교육용 곤충 잡기 게임 - 아이들과 함께 곤충을 잡고 흥미로운 사실을 배워보세요!",
-  "start_url": "/",
+  "start_url": "./?standalone=1",
   "display": "standalone",
   "background_color": "#4ade80",
   "theme_color": "#4ade80",
