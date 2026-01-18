@@ -1,0 +1,23 @@
+import { BugType } from './types';
+
+export const BUG_DATA: Record<BugType, { emoji: string; points: number; rarity: number }> = {
+  [BugType.SCORPION]: { emoji: '🦂', points: 10, rarity: 1 },
+  [BugType.BEETLE]: { emoji: '🪲', points: 25, rarity: 3 },
+  [BugType.LEAF_INSECT]: { emoji: '🍃', points: 15, rarity: 2 },
+  [BugType.EARTHWORM]: { emoji: '🪱', points: 20, rarity: 2 }, 
+  [BugType.LADYBUG]: { emoji: '🐞', points: 5, rarity: 1 },
+  [BugType.GRASSHOPPER]: { emoji: '🦗', points: 20, rarity: 2 },
+  [BugType.BEE]: { emoji: '🐝', points: 12, rarity: 1 },
+  [BugType.HERCULES_BEETLE]: { emoji: '🪲', points: 100, rarity: 5 }, 
+  [BugType.STICK_INSECT]: { emoji: '🎋', points: 35, rarity: 4 },
+  [BugType.LARVA]: { emoji: '🐛', points: 10, rarity: 1 },
+  [BugType.COCKROACH]: { emoji: '🪳', points: 15, rarity: 2 },
+  [BugType.ANT]: { emoji: '🐜', points: 5, rarity: 1 },
+  [BugType.MOSQUITO]: { emoji: '🦟', points: 40, rarity: 4 },
+  [BugType.SPIDER]: { emoji: '🕷️', points: 25, rarity: 3 },
+};
+
+export const INITIAL_SETTINGS = {
+  duration: 45, // seconds
+  spawnRate: 1000, // ms
+};
