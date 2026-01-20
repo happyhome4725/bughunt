@@ -20,7 +20,8 @@ export enum BugType {
   ANT = '개미',
   MOSQUITO = '모기',
   SPIDER = '거미',
-  MULLER_STAG_BEETLE = '뮤엘러리사슴벌레'
+  MULLER_STAG_BEETLE = '뮤엘러리사슴벌레',
+  PALAWAN_STAG_BEETLE = '팔라완대왕사슴벌레'
 }
 
 export interface BugInstance {
