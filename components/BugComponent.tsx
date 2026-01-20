@@ -3,6 +3,7 @@ import React from 'react';
 import { BugInstance, BugType } from '../types';
 import HerculesBeetleIcon from './HerculesBeetleIcon';
 import LeafInsectIcon from './LeafInsectIcon';
+import StickInsectIcon from './StickInsectIcon';
 
 interface BugComponentProps {
   bug: BugInstance;
@@ -12,6 +13,7 @@ interface BugComponentProps {
 const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
   const isHerculesBeetle = bug.type === BugType.HERCULES_BEETLE;
   const isLeafInsect = bug.type === BugType.LEAF_INSECT;
+  const isStickInsect = bug.type === BugType.STICK_INSECT;
 
   return (
     <div
@@ -39,6 +41,8 @@ const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
         <HerculesBeetleIcon size={bug.size} />
       ) : isLeafInsect ? (
         <LeafInsectIcon size={bug.size} />
+      ) : isStickInsect ? (
+        <StickInsectIcon size={bug.size} />
       ) : (
         <span role="img" aria-label={bug.type} className="p-2">
           {bug.emoji}
