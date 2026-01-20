@@ -23,7 +23,8 @@ export enum BugType {
   MULLER_STAG_BEETLE = '뮤엘러리사슴벌레',
   STAG_BEETLE = '왕사슴벌레',
   BORNEO_FLOWER_BEETLE = '보르네오투구뿔꽃무지',
-  JEJU_PYGMY_STAG_BEETLE = '제주뿔꼬마사슴벌레'
+  JEJU_PYGMY_STAG_BEETLE = '제주뿔꼬마사슴벌레',
+  MANTIS = '사마귀'
 }
 
 export interface BugInstance {
