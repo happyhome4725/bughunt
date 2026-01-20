@@ -8,7 +8,7 @@ export const BUG_DATA: Record<BugType, { emoji: string; points: number; rarity: 
   [BugType.LADYBUG]: { emoji: '🐞', points: 5, rarity: 1 },
   [BugType.GRASSHOPPER]: { emoji: '🦗', points: 20, rarity: 2 },
   [BugType.BEE]: { emoji: '🐝', points: 12, rarity: 1 },
-  [BugType.HERCULES_BEETLE]: { emoji: '🪲', points: 100, rarity: 5 },
+  [BugType.HERCULES_BEETLE]: { emoji: '🪲', points: 150, rarity: 6 },
   [BugType.STICK_INSECT]: { emoji: '🎋', points: 35, rarity: 4 },
   [BugType.LARVA]: { emoji: '🐛', points: 10, rarity: 1 },
   [BugType.COCKROACH]: { emoji: '🪳', points: 15, rarity: 2 },

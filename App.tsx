@@ -41,7 +41,19 @@ const App: React.FC = () => {
 
   const spawnBug = useCallback(() => {
     const types = Object.values(BugType);
-    const randomType = types[Math.floor(Math.random() * types.length)];
+
+    // Create a pool of types based on their rarity (weighted random)
+    // Rarity 1: 10 times, Rarity 6: 1 time
+    const weightedTypes: BugType[] = [];
+    types.forEach(type => {
+      const data = BUG_DATA[type];
+      const weight = Math.max(1, 10 - data.rarity);
+      for (let i = 0; i < weight; i++) {
+        weightedTypes.push(type);
+      }
+    });
+
+    const randomType = weightedTypes[Math.floor(Math.random() * weightedTypes.length)];
     const id = Math.random().toString(36).substr(2, 9);
 
     if (randomType === BugType.SPIDER && Math.random() < 0.5) {
@@ -49,7 +61,7 @@ const App: React.FC = () => {
     }
 
     let baseSize = 30;
-    if (randomType === BugType.HERCULES_BEETLE) baseSize = 85;
+    if (randomType === BugType.HERCULES_BEETLE) baseSize = 160;
     else if (randomType === BugType.STICK_INSECT) baseSize = 120;
     else if (randomType === BugType.LEAF_INSECT) baseSize = 80;
     else if (randomType === BugType.MULLER_STAG_BEETLE) baseSize = 120;

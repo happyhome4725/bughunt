@@ -49,7 +49,7 @@ const Encyclopedia: React.FC<EncyclopediaProps> = ({ caughtBugs, onClose }) => {
                 <div className="text-5xl mr-6 bg-green-100 p-4 rounded-full min-w-[90px] h-[90px] flex justify-center items-center shadow-inner">
                   {entry.caught ? (
                     entry.type === BugType.HERCULES_BEETLE ? (
-                      <HerculesBeetleIcon size={60} />
+                      <HerculesBeetleIcon size={110} />
                     ) : entry.type === BugType.LEAF_INSECT ? (
                       <LeafInsectIcon size={80} />
                     ) : entry.type === BugType.STICK_INSECT ? (
