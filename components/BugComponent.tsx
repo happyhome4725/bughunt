@@ -4,6 +4,7 @@ import { BugInstance, BugType } from '../types';
 import HerculesBeetleIcon from './HerculesBeetleIcon';
 import LeafInsectIcon from './LeafInsectIcon';
 import StickInsectIcon from './StickInsectIcon';
+import MullerStagBeetleIcon from './MullerStagBeetleIcon';
 
 interface BugComponentProps {
   bug: BugInstance;
@@ -14,6 +15,7 @@ const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
   const isHerculesBeetle = bug.type === BugType.HERCULES_BEETLE;
   const isLeafInsect = bug.type === BugType.LEAF_INSECT;
   const isStickInsect = bug.type === BugType.STICK_INSECT;
+  const isMullerStagBeetle = bug.type === BugType.MULLER_STAG_BEETLE;
 
   return (
     <div
@@ -43,6 +45,8 @@ const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
         <LeafInsectIcon size={bug.size} />
       ) : isStickInsect ? (
         <StickInsectIcon size={bug.size} />
+      ) : isMullerStagBeetle ? (
+        <MullerStagBeetleIcon size={bug.size} />
       ) : (
         <span role="img" aria-label={bug.type} className="p-2">
           {bug.emoji}
