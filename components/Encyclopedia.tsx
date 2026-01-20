@@ -61,7 +61,7 @@ const Encyclopedia: React.FC<EncyclopediaProps> = ({ caughtBugs, onClose }) => {
                     ) : entry.type === BugType.BORNEO_FLOWER_BEETLE ? (
                       <BorneoFlowerBeetleIcon size={90} />
                     ) : entry.type === BugType.JEJU_PYGMY_STAG_BEETLE ? (
-                      <JejuPygmyStagBeetleIcon size={80} />
+                      <JejuPygmyStagBeetleIcon size={60} />
                     ) : (
                       entry.data.emoji
                     )
