@@ -21,7 +21,8 @@ export enum BugType {
   MOSQUITO = '모기',
   SPIDER = '거미',
   MULLER_STAG_BEETLE = '뮤엘러리사슴벌레',
-  STAG_BEETLE = '왕사슴벌레'
+  STAG_BEETLE = '왕사슴벌레',
+  BORNEO_FLOWER_BEETLE = '보르네오투구뿔꽃무지'
 }
 
 export interface BugInstance {
