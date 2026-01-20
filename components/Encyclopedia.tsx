@@ -10,6 +10,7 @@ import StagBeetleIcon from './StagBeetleIcon';
 import BorneoFlowerBeetleIcon from './BorneoFlowerBeetleIcon';
 import JejuPygmyStagBeetleIcon from './JejuPygmyStagBeetleIcon';
 import MantisIcon from './MantisIcon';
+import EmeraldWaspIcon from './EmeraldWaspIcon';
 
 interface EncyclopediaProps {
   caughtBugs: Record<BugType, CaughtBug>;
@@ -65,6 +66,8 @@ const Encyclopedia: React.FC<EncyclopediaProps> = ({ caughtBugs, onClose }) => {
                       <JejuPygmyStagBeetleIcon size={45} />
                     ) : entry.type === BugType.MANTIS ? (
                       <MantisIcon size={80} />
+                    ) : entry.type === BugType.EMERALD_WASP ? (
+                      <EmeraldWaspIcon size={90} />
                     ) : (
                       entry.data.emoji
                     )
