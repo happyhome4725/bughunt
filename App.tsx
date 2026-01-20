@@ -52,7 +52,7 @@ const App: React.FC = () => {
     if (randomType === BugType.HERCULES_BEETLE) baseSize = 85;
     else if (randomType === BugType.STICK_INSECT) baseSize = 120;
     else if (randomType === BugType.LEAF_INSECT) baseSize = 80;
-    else if (randomType === BugType.MULLER_STAG_BEETLE) baseSize = 80;
+    else if (randomType === BugType.MULLER_STAG_BEETLE) baseSize = 120;
     else if (randomType === BugType.ANT) baseSize = 15;
     else if (randomType === BugType.MOSQUITO) baseSize = 20;
     else if (randomType === BugType.EARTHWORM) baseSize = 25;
