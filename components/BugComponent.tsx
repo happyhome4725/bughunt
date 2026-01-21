@@ -10,6 +10,8 @@ import BorneoFlowerBeetleIcon from './BorneoFlowerBeetleIcon';
 import JejuPygmyStagBeetleIcon from './JejuPygmyStagBeetleIcon';
 import MantisIcon from './MantisIcon';
 import EmeraldWaspIcon from './EmeraldWaspIcon';
+import RhinoBeetleIcon from './RhinoBeetleIcon';
+import ChironBeetleIcon from './ChironBeetleIcon';
 
 interface BugComponentProps {
   bug: BugInstance;
@@ -26,6 +28,8 @@ const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
   const isJejuPygmyStagBeetle = bug.type === BugType.JEJU_PYGMY_STAG_BEETLE;
   const isMantis = bug.type === BugType.MANTIS;
   const isEmeraldWasp = bug.type === BugType.EMERALD_WASP;
+  const isRhinoBeetle = bug.type === BugType.RHINO_BEETLE;
+  const isChironBeetle = bug.type === BugType.CHIRON_BEETLE;
 
   return (
     <div
@@ -67,6 +71,10 @@ const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
         <MantisIcon size={bug.size} />
       ) : isEmeraldWasp ? (
         <EmeraldWaspIcon size={bug.size} />
+      ) : isRhinoBeetle ? (
+        <RhinoBeetleIcon size={bug.size} />
+      ) : isChironBeetle ? (
+        <ChironBeetleIcon size={bug.size} />
       ) : (
         <span role="img" aria-label={bug.type} className="p-2">
           {bug.emoji}

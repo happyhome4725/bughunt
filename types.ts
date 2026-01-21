@@ -25,7 +25,9 @@ export enum BugType {
   BORNEO_FLOWER_BEETLE = '보르네오투구뿔꽃무지',
   JEJU_PYGMY_STAG_BEETLE = '제주뿔꼬마사슴벌레',
   MANTIS = '사마귀',
-  EMERALD_WASP = '는쟁이벌'
+  EMERALD_WASP = '는쟁이벌',
+  RHINO_BEETLE = '장수풍뎅이',
+  CHIRON_BEETLE = '케이론청동장수풍뎅이'
 }
 
 export interface BugInstance {

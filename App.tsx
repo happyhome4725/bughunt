@@ -70,6 +70,8 @@ const App: React.FC = () => {
     else if (randomType === BugType.JEJU_PYGMY_STAG_BEETLE) baseSize = 25;
     else if (randomType === BugType.MANTIS) baseSize = 100;
     else if (randomType === BugType.EMERALD_WASP) baseSize = 60;
+    else if (randomType === BugType.RHINO_BEETLE) baseSize = 100;
+    else if (randomType === BugType.CHIRON_BEETLE) baseSize = 140;
     else if (randomType === BugType.ANT) baseSize = 15;
     else if (randomType === BugType.MOSQUITO) baseSize = 20;
     else if (randomType === BugType.EARTHWORM) baseSize = 25;
@@ -198,7 +200,7 @@ const App: React.FC = () => {
           return {
             ...bug,
             x: bug.x + Math.sin(newAngle * (Math.PI / 180)) * currentSpeed,
-            y: bug.y + Math.cos(newAngle * (Math.PI / 180)) * currentSpeed,
+            y: bug.y - Math.cos(newAngle * (Math.PI / 180)) * currentSpeed,
             angle: newAngle
           };
         }));
