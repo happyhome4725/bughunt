@@ -23,6 +23,8 @@ export const BUG_DATA: Record<BugType, { emoji: string; points: number; rarity: 
   [BugType.EMERALD_WASP]: { emoji: '🐝', points: 120, rarity: 5 },
   [BugType.RHINO_BEETLE]: { emoji: '🪲', points: 75, rarity: 4 },
   [BugType.CHIRON_BEETLE]: { emoji: '🪲', points: 110, rarity: 5 },
+  [BugType.CYCLOMMATUS_METALLIFER]: { emoji: '🪲', points: 120, rarity: 5 },
+  [BugType.DYNASTES_SATANAS]: { emoji: '🪲', points: 140, rarity: 6 },
 };
 
 export const INITIAL_SETTINGS = {

@@ -72,6 +72,8 @@ const App: React.FC = () => {
     else if (randomType === BugType.EMERALD_WASP) baseSize = 60;
     else if (randomType === BugType.RHINO_BEETLE) baseSize = 25;
     else if (randomType === BugType.CHIRON_BEETLE) baseSize = 140;
+    else if (randomType === BugType.CYCLOMMATUS_METALLIFER) baseSize = 130;
+    else if (randomType === BugType.DYNASTES_SATANAS) baseSize = 150;
     else if (randomType === BugType.ANT) baseSize = 15;
     else if (randomType === BugType.MOSQUITO) baseSize = 20;
     else if (randomType === BugType.EARTHWORM) baseSize = 25;
