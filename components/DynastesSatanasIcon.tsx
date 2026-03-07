@@ -1,5 +1,5 @@
 import React from 'react';
-import dynastesSatanasImg from '../assets/dynastes-satanas.png';
+import dynastesSatanasImg from '../assets/dynastes-satanas-new.png';
 
 interface DynastesSatanasIconProps {
     size?: number;
