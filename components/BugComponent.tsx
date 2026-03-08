@@ -14,6 +14,7 @@ import RhinoBeetleIcon from './RhinoBeetleIcon';
 import ChironBeetleIcon from './ChironBeetleIcon';
 import CyclommatusMetalliferIcon from './CyclommatusMetalliferIcon';
 import DynastesSatanasIcon from './DynastesSatanasIcon';
+import MeothjorongbakIcon from './MeothjorongbakIcon';
 
 interface BugComponentProps {
   bug: BugInstance;
@@ -34,6 +35,7 @@ const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
   const isChironBeetle = bug.type === BugType.CHIRON_BEETLE;
   const isCyclommatusMetallifer = bug.type === BugType.CYCLOMMATUS_METALLIFER;
   const isDynastesSatanas = bug.type === BugType.DYNASTES_SATANAS;
+  const isMeothjorongbak = bug.type === BugType.MEOTHJORONGBAK;
 
   return (
     <div
@@ -83,6 +85,8 @@ const BugComponent: React.FC<BugComponentProps> = ({ bug, onCatch }) => {
         <CyclommatusMetalliferIcon size={bug.size} />
       ) : isDynastesSatanas ? (
         <DynastesSatanasIcon size={bug.size} />
+      ) : isMeothjorongbak ? (
+        <MeothjorongbakIcon size={bug.size} />
       ) : (
         <span role="img" aria-label={bug.type} className="p-2">
           {bug.emoji}

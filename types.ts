@@ -29,7 +29,8 @@ export enum BugType {
   RHINO_BEETLE = '장수풍뎅이',
   CHIRON_BEETLE = '케이론청동장수풍뎅이',
   CYCLOMMATUS_METALLIFER = '메탈리퍼가위사슴벌레',
-  DYNASTES_SATANAS = '사탄왕장수풍뎅이'
+  DYNASTES_SATANAS = '사탄왕장수풍뎅이',
+  MEOTHJORONGBAK = '멋조롱박딱정벌레'
 }
 
 export interface BugInstance {

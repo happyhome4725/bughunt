@@ -15,6 +15,7 @@ import RhinoBeetleIcon from './RhinoBeetleIcon';
 import ChironBeetleIcon from './ChironBeetleIcon';
 import CyclommatusMetalliferIcon from './CyclommatusMetalliferIcon';
 import DynastesSatanasIcon from './DynastesSatanasIcon';
+import MeothjorongbakIcon from './MeothjorongbakIcon';
 
 interface EncyclopediaProps {
   caughtBugs: Record<BugType, CaughtBug>;
@@ -80,6 +81,8 @@ const Encyclopedia: React.FC<EncyclopediaProps> = ({ caughtBugs, onClose }) => {
                       <CyclommatusMetalliferIcon size={100} />
                     ) : entry.type === BugType.DYNASTES_SATANAS ? (
                       <DynastesSatanasIcon size={110} />
+                    ) : entry.type === BugType.MEOTHJORONGBAK ? (
+                      <MeothjorongbakIcon size={100} />
                     ) : (
                       entry.data.emoji
                     )
