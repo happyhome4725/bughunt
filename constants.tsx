@@ -26,6 +26,7 @@ export const BUG_DATA: Record<BugType, { emoji: string; points: number; rarity: 
   [BugType.CYCLOMMATUS_METALLIFER]: { emoji: '🪲', points: 120, rarity: 5 },
   [BugType.DYNASTES_SATANAS]: { emoji: '🪲', points: 140, rarity: 3 },
   [BugType.MEOTHJORONGBAK]: { emoji: '🪲', points: 100, rarity: 4 },
+  [BugType.DENTICULATA_MANTIS]: { emoji: '🦗', points: 130, rarity: 5 },
 };
 
 export const INITIAL_SETTINGS = {

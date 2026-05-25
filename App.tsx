@@ -75,6 +75,7 @@ const App: React.FC = () => {
     else if (randomType === BugType.CYCLOMMATUS_METALLIFER) baseSize = 130;
     else if (randomType === BugType.DYNASTES_SATANAS) baseSize = 150;
     else if (randomType === BugType.MEOTHJORONGBAK) baseSize = 90;
+    else if (randomType === BugType.DENTICULATA_MANTIS) baseSize = 145;
     else if (randomType === BugType.ANT) baseSize = 15;
     else if (randomType === BugType.MOSQUITO) baseSize = 20;
     else if (randomType === BugType.EARTHWORM) baseSize = 25;
@@ -89,6 +90,7 @@ const App: React.FC = () => {
     else if (randomType === BugType.HERCULES_BEETLE) speed = 0.15;
     else if (randomType === BugType.EARTHWORM) speed = 0.08;
     else if (randomType === BugType.SPIDER) speed = Math.random() * 0.15 + 0.3;
+    else if (randomType === BugType.DENTICULATA_MANTIS) speed = Math.random() * 0.2 + 0.45;
 
     const newBug: BugInstance = {
       id,
